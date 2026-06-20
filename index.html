@@ -3,10 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>お試しHP</title>
+  <meta name="description" content="地域密着の塗装サービス。外壁・屋根・室内の塗装を迅速に対応します。">
+  <title>塗装屋 — サンプルサイト</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <h1>お試しホームページ</h1>
-  <p>テスト中です。</p>
+  <header id="site-header">
+    <div class="container header-inner">
+      <div class="logo">塗装屋</div>
+      <nav class="nav">
+        <a href="#services">サービス</a>
+        <a href="works/">施工事例</a>
+        <a href="#about">概要</a>
+        <a href="#contact">連絡先</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>信頼の塗装で、家を守る。</h1>
+          <p>外壁・屋根・室内の塗装を一括で対応。見積もり無料、地域最短対応。</p>
+          <p class="hero-buttons">
+            <a class="btn btn-primary" href="tel:0123456789">お電話で相談する</a>
+            <a class="btn btn-outline" href="mailto:info@example.com">メールで問い合わせ</a>
+          </p>
+        </div>
+        <div class="hero-media">
+          <img src="assets/img/hero.png" alt="塗装のイメージ写真（施工中）">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>サービス</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="assets/img/service1.png" alt="外壁塗装">
+            <h3>外壁塗装</h3>
+            <p>耐候性の高い塗料で外壁をしっかり保護します。</p>
+            <p><a href="works/1.html">施工事例を見る</a></p>
+          </article>
+          <article class="card">
+            <img src="assets/img/service1.png" alt="屋根塗装">
+            <h3>屋根塗装</h3>
+            <p>防水性と断熱性を維持する塗装を行います。</p>
+            <p><a href="works/1.html">施工事例を見る</a></p>
+          </article>
+          <article class="card">
+            <img src="assets/img/service1.png" alt="室内塗装">
+            <h3>室内塗装</h3>
+            <p>低臭・低VOC塗料で快適な室内環境を保ちます。</p>
+            <p><a href="works/1.html">施工事例を見る</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>会社概要</h2>
+        <p>地域密着で20年、安心の保証と経験豊富な職人が施工します。</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>連絡先</h2>
+        <ul class="contact-list">
+          <li>電話: <a href="tel:0123456789">012-345-6789</a></li>
+          <li>メール: <a href="mailto:info@example.com">info@example.com</a></li>
+          <li>SNS: <a href="#">Instagram</a> / <a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> 塗装屋</div>
+      <div class="footer-links">住所・営業時間など</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

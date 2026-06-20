@@ -1,0 +1,50 @@
+:root{
+  --color-text:#0F172A; /* main text (nav/heading) */
+  --color-bg:#F8FAFC; /* page background */
+  --color-accent:#F97316; /* orange accent */
+  --color-cta:#D97706; /* darker CTA */
+  --max-width:1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:'Noto Sans JP', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:var(--color-text);background:var(--color-bg);}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+/* Header */
+#site-header{background:#fff;border-bottom:1px solid #e6e9ef;position:sticky;top:0;z-index:40}
+.header-inner{display:flex;align-items:center;justify-content:center;gap:1rem}
+.logo{font-weight:700;font-size:1.1rem;position:absolute;left:1rem}
+.nav{display:flex;gap:1.5rem}
+.nav a{color:var(--color-text);text-decoration:none}
+
+/* Buttons */
+.btn{display:inline-block;text-decoration:none;color:inherit;border:1px solid transparent;padding:0.6rem 1rem;border-radius:8px;font-weight:600}
+.btn-primary{background:var(--color-accent);color:#fff}
+.btn-outline{background:transparent;border:1px solid rgba(15,23,42,0.08)}
+.btn-ghost{background:transparent}
+
+/* Hero */
+.hero{padding:3rem 0}
+.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center}
+.hero-copy h1{font-size:2rem;margin:0 0 0.6rem}
+.hero-copy p{margin:0 0 1rem;color:#334155}
+.hero-media img{width:100%;height:auto;border-radius:8px;display:block}
+
+/* Cards */
+.section{padding:2rem 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+.card img{width:64px;height:64px}
+
+/* Footer */
+#site-footer{padding:1rem 0;border-top:1px solid #e6e9ef;background:transparent}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .nav{display:none}
+}
+
+@media (max-width:480px){
+  .hero-copy h1{font-size:1.5rem}
+}
